@@ -1,6 +1,6 @@
 FROM python:3.11-slim
 
-RUN apt-get update && apt-get install -y ffmpeg libegl1-mesa libglvnd-dev libglvnd0
+RUN apt-get update && apt-get install -y ffmpeg libegl1-mesa libglvnd-dev libglvnd0 git
 
 RUN mkdir -p /usr/share/glvnd/egl_vendor.d
 
