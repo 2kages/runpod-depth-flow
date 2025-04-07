@@ -1,5 +1,8 @@
 {
     "input": {
-        "image": "https://static.vipro.studio/anycomfy/face.png"
+        "image": "https://static.vipro.studio/anycomfy/face.png",
+        "animation_presets": [
+            "circle"
+        ]
     }
 }

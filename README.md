@@ -33,10 +33,21 @@ source .env
 ```json
 {
   "input": {
-    "image": "<your image url>"
+    "image": "<your image url>",
+    "presets": ["<list of animation preset>"]
   }
 }
 ```
+
+List of available animation preset:
+* orbital
+* vertical
+* horizontal
+* zoom
+* circle
+* dolly
+
+The `presets` input is optional. We will use `orbital` if not provided. You can also combine multiple presets
 
 # Output schema
 
@@ -47,3 +58,7 @@ source .env
   }
 }
 ```
+
+# LICENSE
+
+DepthFlow license is GNU Affero General Public License v3.0
