@@ -18,7 +18,7 @@ def output_path(file_name):
     return os.path.join("output", file_name)
 
 def init_scene():
-    scene = DepthScene()
+    scene = DepthScene(backend="headless")
     return scene
 
 def upload_file_to_s3(file_path, key):
