@@ -1,0 +1,8 @@
+--extra-index-url https://download.pytorch.org/whl/cu124
+torch
+transformers
+imgui_bundle
+spaces
+git+https://github.com/BrokenSource/DepthFlow.git
+runpod
+boto3
