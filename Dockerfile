@@ -10,10 +10,10 @@ ENV __EGL_VENDOR_LIBRARY_FILENAMES=/usr/share/glvnd/egl_vendor.d/10_nvidia.json
 
 WORKDIR /app
 
+COPY ./requirements.txt .
+
+RUN pip install --upgrade pip && pip install -r requirements.txt
+
 COPY . .
-
-RUN pip install --upgrade pip
-
-RUN pip install -r requirements.txt
 
 CMD ["python", "-u", "rp_handler.py"]

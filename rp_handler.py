@@ -40,7 +40,8 @@ def handler(event):
     upload_file_to_s3(output, s3_key)
 
     return {
-        "output": f"https://s3.{AWS_REGION}.amazonaws.com/{BUCKET_NAME}/{s3_key}"
+        "key": s3_key,
+        "video": f"https://s3.{AWS_REGION}.amazonaws.com/{BUCKET_NAME}/{s3_key}"
     }
 
 if __name__ == '__main__':

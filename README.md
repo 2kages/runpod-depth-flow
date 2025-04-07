@@ -8,7 +8,7 @@ See the full document of DepthFlow [here](https://github.com/BrokenSource/DepthF
 
 - ffmpeg
 - s3 account
-- run on any cheap GPU serverless (T4 or L4 should be more than enough)
+- run on any NVIDIA GPU serverless on RunPod
 
 # prepare environment variable 
 
@@ -30,16 +30,20 @@ source .env
 
 # Input schema 
 
-```
+```json
 {
-    "input": {
-        "image": "<your image url>"
-    }
+  "input": {
+    "image": "<your image url>"
+  }
 }
 ```
 
 # Output schema
 
-```
-{'output': '<output url>'}
+```json
+{
+  "output": {
+    "video": "<output url>"
+  }
+}
 ```
